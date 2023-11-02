@@ -24,13 +24,13 @@
             </a>
             <ul class="nav">
                 <li class="nav_item3">
-                <a href="index.php" class="nav_item_link">Главная</a>
+                <a href="index.php" class="nav_item_link">Гвная</a>
                 </li>
                 <li class="nav_item">
                 <a href="about-us.php" class="nav_item_link">О нас</a>
                 </li>
                 <li class="nav_item">
-                <a href="cours.php" class="nav_item_link">Курсы</a>
+                <a href="cours.php" class="nav_item_link">Кы</a>
                 </li>
                 <li class="nav_item">
                 <a href="comand.php" class="nav_item_link">Команда</a>
