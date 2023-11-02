@@ -38,10 +38,10 @@
                 <a href="about-us.php" class="nav_item_link">О нас</a>
                 </li>
                 <li class="nav_item">
-                <a href="cours.php" class="nav_item_link">Курсы</a>
+                <a href="course.php" class="nav_item_link">Курсы</a>
                 </li>
                 <li class="nav_item">
-                <a href="comand.php" class="nav_item_link">Команда</a>
+                <a href="command.php" class="nav_item_link">Команда</a>
                 </li>
                 <?php if (isset($_SESSION['clients']) || isset($_SESSION['employees'])) { ?>
                 <li class="nav_item2">
