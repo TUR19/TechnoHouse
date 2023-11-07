@@ -1,6 +1,6 @@
 <footer class="footer">
       <div class="container">
-      	<div class="footer__logo">
+        <div class="footer__logo">
           <a href="./index.html">
             <img src="images/LOGO.svg" alt="" />
           </a>
@@ -28,5 +28,4 @@
           </div>
         </div>
       </div>
-</footer>
-
+    </footer>

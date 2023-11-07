@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head> 
 <body> 
@@ -30,7 +30,7 @@
                 <a href="about-us.php" class="nav_item_link">О нас</a>
                 </li>
                 <li class="nav_item">
-                <a href="cours.php" class="nav_item_link">Курсы</a>
+                <a href="course.php" class="nav_item_link">Курсы</a>
                 </li>
                 <li class="nav_item">
                 <a href="comand.php" class="nav_item_link">Команда</a>
@@ -69,7 +69,7 @@
 
             <button class="btn btn-primary w-100 py-2" type="submit">Зарегистрироваться</button>
 
-            <p class="upper">Если у вас есть аккаунт, пожалуйста, <a class="text-decoration-none" href="Sign-in.php">войдите</a></p>
+            <p class="upper">Если у вас есть аккаунт, пожалуйста, <a class="text-decoration-none" href="sign-in.php">войдите</a></p>
             <?php
                 if (isset($_SESSION['message'])) {
                     echo '<p class="msg"> ' . $_SESSION['message'] . ' </p>';

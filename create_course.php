@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css">
+</head> 
 <body>
     <?php require 'blocks/header.php' ?>
     <?php
         if (isset($_SESSION['clients'])) {
-            header('Location: Cours.php');
+            header('Location: course.php');
+        }
+    ?>
+
+    <?php 
+        if (isset($_SESSION['message'])) {
+            echo '<p class="msg"> ' . $_SESSION['message'] . ' </p>';
+            unset($_SESSION['message']);
         }
     ?>
 
@@ -21,7 +28,7 @@
         <label for="price">Цена:</label>
         <input type="text" id="price" name="price">
 
-        <input type="hidden" id="emp_id" name="emp_id">
+        <input type="hidden" id="emp_id" name="emp_id" value="<?php echo (isset($_SESSION['emp_id'])); ?>">
 
         <label for="lvl">Уровень сложности:</label>
         <input type="text" id="lvl" name="lvl">
@@ -29,7 +36,7 @@
         <label for="overview">Обзор курса:</label>
         <textarea id="overview" name="overview" rows="4"></textarea>
 
-        <label for="duration">Продолжительность курса (в месяцах):</label>
+        <label for="duration">Продолжительность курса (в день):</label>
         <input type="text" id="duration" name="duration">
 
         <label for="hour_count">Количество часов в неделю:</label>

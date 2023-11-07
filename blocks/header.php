@@ -5,7 +5,7 @@
   <div class="wrap">
       <div class="container">
         <header class="header">
-          <a href="index.php" class="logo">
+          <a href="Index.php" class="logo">
             <img src="images/LOGO.svg" alt="" />
           </a>
           <ul class="nav">
@@ -16,7 +16,7 @@
               <a href="about-us.php" class="nav_item_link">О нас</a>
             </li>
             <li class="nav_item">
-              <a href="cours.php" class="nav_item_link">Курсы</a>
+              <a href="course.php" class="nav_item_link">Курсы</a>
             </li>
             <li class="nav_item">
               <a href="comand.php" class="nav_item_link">Команда</a>

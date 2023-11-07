@@ -11,8 +11,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
-    <link rel="stylesheet" href="normalize.css"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css">
 
 </head> 
 <body>
@@ -24,13 +24,13 @@
             </a>
             <ul class="nav">
                 <li class="nav_item3">
-                <a href="index.php" class="nav_item_link">Гвная</a>
+                <a href="index.php" class="nav_item_link">Главная</a>
                 </li>
                 <li class="nav_item">
                 <a href="about-us.php" class="nav_item_link">О нас</a>
                 </li>
                 <li class="nav_item">
-                <a href="cours.php" class="nav_item_link">Кы</a>
+                <a href="course.php" class="nav_item_link">Курсы</a>
                 </li>
                 <li class="nav_item">
                 <a href="comand.php" class="nav_item_link">Команда</a>
