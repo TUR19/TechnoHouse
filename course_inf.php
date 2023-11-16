@@ -9,10 +9,7 @@
     $statement->execute();
     $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-    if (!isset($_SESSION['clients']) && !isset($_SESSION['employees'])) {
-        header('Location: sign-in.php');
-        exit();
-    } else if (isset($_SESSION['clients'])) {
+    if (isset($_SESSION['clients'])) {
         // Действия, связанные с клиентом
         $user = $_SESSION['clients'];
     } else if (isset($_SESSION['employees'])) {
@@ -36,7 +33,7 @@
         <div class="container">
             <header class="header">
             <a href="index.php" class="logo">
-                <img src="images/LOGO.svg" alt="" />
+                <img src="images/logo_2.png" alt="" />
             </a>
             <ul class="nav">
                 <li class="nav_item3">

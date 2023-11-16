@@ -65,9 +65,7 @@ body {
     justify-content: space-between;
 }
 
-.logo {
-    height: 40px;
-}
+
 
 .nav {
     display: flex;
@@ -474,7 +472,7 @@ body {
     padding-bottom: 100px;
 }
 
-.galery_wrap {
+.galery_wrap { 
     position: relative;
 }
 

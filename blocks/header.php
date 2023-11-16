@@ -6,7 +6,7 @@
       <div class="container">
         <header class="header">
           <a href="Index.php" class="logo">
-            <img src="images/LOGO.svg" alt="" />
+            <img src="images/logo_2.png" alt="" />
           </a>
           <ul class="nav">
             <li class="nav_item3">

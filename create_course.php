@@ -36,7 +36,7 @@
         <label for="overview">Обзор курса:</label>
         <textarea id="overview" name="overview" rows="4"></textarea>
 
-        <label for="duration">Продолжительность курса (в день):</label>
+        <label for="duration">Продолжительность курса (в месяцах):</label>
         <input type="text" id="duration" name="duration">
 
         <label for="hour_count">Количество часов в неделю:</label>

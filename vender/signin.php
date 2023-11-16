@@ -40,11 +40,12 @@
 
     if ($clients) {
         $_SESSION['clients'] = [
-            "id" => $clients['id'], 
+            "client_id" => $clients['client_id'], 
             "full_name" => $clients['full_name'],
             "email" => $clients['email'],
             "phone_number" => $clients['phone_number']
         ];
+        $_SESSION['client_id'] = $clients['client_id'];
         header('Location: ../profile.php');
         exit();
     } 

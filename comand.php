@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/main.css" />
-
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <?php require "blocks/header.php" ?>

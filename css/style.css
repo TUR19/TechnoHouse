@@ -202,3 +202,8 @@ ol, ul {
     display: flex;
     justify-content: center;
 }
+
+.logo > img {
+    height: 180px;
+    width: 180px;
+}

@@ -1,7 +1,7 @@
 <?php
     session_start();
     if (!isset($_SESSION['clients']) && !isset($_SESSION['employees'])) {
-        header('Location: sign-in.php');
+        header('Location: index.php');
         exit();
     } else if (isset($_SESSION['clients'])) {
         // Действия, связанные с клиентом
@@ -29,7 +29,7 @@
         <div class="container">
             <header class="header">
             <a href="index.php" class="logo">
-                <img src="images/LOGO.svg" alt="" />
+                <img src="images/logo_2.png" alt="" />
             </a>
             <ul class="nav">
                 <li class="nav_item3">

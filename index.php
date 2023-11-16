@@ -12,6 +12,7 @@
   <title>TechnoHouse</title>
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
       
     <header class="header">
     <a href="" class="logo">
-        <img src="images/LOGO.svg" alt="" />
+        <img src="images/logo_2.png" alt="" />
     </a>
     <ul class="nav">
         <li class="nav_item3">
@@ -90,7 +91,7 @@
           и к развитию новых курсов, чтобы удовлетворить потребности наших
           учеников и быть на шаг впереди в индустрии.
         </p>
-      </div>
+      </div> 
     <div id="contacts" class="contacts">
       <div class="container">
         <div class="contacts__wrap">
