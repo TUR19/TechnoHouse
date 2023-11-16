@@ -1,5 +1,5 @@
 $('.galery_wrap').slick({
-    infinite: true, 
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
     prevArrow: $('.btn_left'),

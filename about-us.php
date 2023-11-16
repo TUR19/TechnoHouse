@@ -7,21 +7,22 @@
 
 
 <link rel="stylesheet" href="css/normalize.css" />
-<link rel="stylesheet" href="css/main.css" />
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/about-us.css" />
 
 </head>
 <body>
 <?php require "blocks/header.php" ?>
 <div id="about" class="about_us">
-    <div class="container">
+  <!-- <div class="wrap"> -->
+    <div class="container_about_us">
+      <div class="container">
         <div class="about_us_info">
-        <div class="about_us_text">
-            <p class="about_us_text_1">О НАС</p>
-            <h2 class="h2">
-            Изучай и осваивай новую профессию вместе с нами
-            </h2>
-        </div>
+          <div class="about_us_text">
+              <p class="about_us_text_1">О НАС</p>
+              <h2 class="h2">
+              Изучай и осваивай новую профессию вместе с нами
+              </h2>
+          </div>
         <div class="about_us_cart">
             <p class="about_us_card_text">
             Проект был основан в 2023 году, с целью развития среди молодых
@@ -31,8 +32,11 @@
             </p>
         </div>
         </div>
+      </div>
+      <?php require "blocks/footer.php" ?>
     </div>
+  <!-- </div> -->
 </div>
-<?php require "blocks/footer.php" ?>
+<!-- php osi zherde boldi -->
 </body>
 </html>

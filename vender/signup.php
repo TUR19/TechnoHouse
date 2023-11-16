@@ -12,7 +12,7 @@
         header('Location: ../sign-up.php');
         exit();
     }
- 
+
     if (mb_strlen($full_name) < 4 || mb_strlen($full_name) > 50) {
         $_SESSION['message'] = "Недопустимая ФИО";
         header('Location: ../sign-up.php');
@@ -22,7 +22,7 @@
         header('Location: ../sign-up.php');
         exit();
     } else if (mb_strlen($password) < 6 || mb_strlen($password) > 30) {
-        $_SESSION['message'] = "Пароль должен содержать больше 6";
+        $_SESSION['message'] = "Пароль должен содержать от 6 до 30 символов";
         header('Location: ../sign-up.php');
         exit();
     }

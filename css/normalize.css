@@ -18,3 +18,10 @@ table {
   border-spacing: 0;
 }
 
+.create_course {
+  color: #d71717;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}

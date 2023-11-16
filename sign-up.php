@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head> 
 <body> 
@@ -20,7 +20,7 @@
         <div class="container">
             <header class="header">
             <a href="index.php" class="logo">
-                <img src="images/logo_2.png" alt="" />
+                <img src="images/LOGO.svg" alt="" />
             </a>
             <ul class="nav">
                 <li class="nav_item3">
@@ -33,7 +33,7 @@
                 <a href="course.php" class="nav_item_link">Курсы</a>
                 </li>
                 <li class="nav_item">
-                <a href="comand.php" class="nav_item_link">Команда</a>
+                <a href="command.php" class="nav_item_link">Команда</a>
                 </li>
                 <?php if (isset($_SESSION['clients'])) { ?>
                 <li class="nav_item2"> <a href="profile.php" class="nav_item_link2"><?php echo $_SESSION['clients']['full_name']; ?></a></li>
@@ -69,7 +69,7 @@
 
             <button class="btn btn-primary w-100 py-2" type="submit">Зарегистрироваться</button>
 
-            <p class="upper">Если у вас есть аккаунт, пожалуйста, <a class="text-decoration-none" href="sign-in.php">войдите</a></p>
+            <p class="upper">Если у вас есть аккаунт, пожалуйста, <a class="text-decoration-none" href="Sign-in.php">войдите</a></p>
             <?php
                 if (isset($_SESSION['message'])) {
                     echo '<p class="msg"> ' . $_SESSION['message'] . ' </p>';
