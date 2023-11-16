@@ -12,6 +12,7 @@
   <title>TechnoHouse</title>
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
       
     <header class="header">
     <a href="" class="logo">
-        <img src="images/LOGO.svg" alt="" />
+        <img src="images/logo_2.png" alt="" />
     </a>
     <ul class="nav">
         <li class="nav_item3">
@@ -33,7 +34,7 @@
             <a href="course.php" class="nav_item_link">Курсы</a>
         </li>
         <li class="nav_item">
-            <a href="command.php" class="nav_item_link">Команда</a>
+            <a href="comand.php" class="nav_item_link">Команда</a>
         </li>
 
         <?php if (isset($_SESSION['clients']) || isset($_SESSION['employees'])) { ?>
@@ -75,22 +76,22 @@
         <p class="why_th_text">
           Мы стремимся сделать обучение программированию доступным и понятным
           для всех, кто хочет освоить эту востребованную и перспективную
-          профессию.
+          профессию.<br />
           Наши курсы предназначены как для начинающих, так и для тех, кто уже
           имеет некоторый опыт в программировании. Наша методика обучения
           основана на практических заданиях и проектах, что позволяет нашим
           ученикам получить реальный опыт работы и подготовиться к будущей
-          карьере в программировании.
+          карьере в программировании.<br />
           Наша команда состоит из опытных и квалифицированных преподавателей,
           которые всегда готовы помочь и поддержать своих учеников на каждом
-          этапе обучения.
+          этапе обучения.<br />
           Мы гордимся тем, что наша компания имеет репутацию надежного и
-          профессионального партнера в сфере обучения программированию.
+          профессионального партнера в сфере обучения программированию.<br />
           Мы стремимся к постоянному совершенствованию нашей методики обучения
           и к развитию новых курсов, чтобы удовлетворить потребности наших
           учеников и быть на шаг впереди в индустрии.
         </p>
-      </div>
+      </div> 
     <div id="contacts" class="contacts">
       <div class="container">
         <div class="contacts__wrap">
@@ -129,7 +130,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__logo">
-          <a href="./index.php">
+          <a href="./index.html">
             <img src="images/LOGO.svg" alt="" />
           </a>
         </div>

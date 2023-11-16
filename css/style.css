@@ -1,13 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Philosopher', sans-serif;
-    z-index: 0;
-}
 
 .wrap {
     width: 100%;
@@ -206,4 +196,14 @@ input[type="submit"]:hover {
 
 ol, ul {
     list-style: none;
+}
+
+.schedule {
+    display: flex;
+    justify-content: center;
+}
+
+.logo > img {
+    height: 180px;
+    width: 180px;
 }

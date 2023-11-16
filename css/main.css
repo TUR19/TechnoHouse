@@ -1,7 +1,6 @@
 body {
     font-family: 'Philosopher', sans-serif;
     z-index: 0;
-    margin: 0;
 }
 
 
@@ -24,7 +23,7 @@ body {
     right: 0;
     height: 349px;
     width: 100%;
-    background-image: url('../images/wave\ \(6\).svg');
+    background-image: url('./images/wave\ \(6\).svg');
     background-size: cover;
     background-position: 0 0;
     z-index: -1;
@@ -39,7 +38,7 @@ body {
     right: 0;
     height: 349px;
     width: 100%;
-    background-image: url('../images/wave\ \(5\).svg');
+    background-image: url('./images/wave\ \(5\).svg');
     background-size: cover;
     background-position: 0 0;
     z-index: -1;
@@ -64,12 +63,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.logo {
-    height: 40px;
-}
+
 
 .nav {
     display: flex;
@@ -169,11 +165,51 @@ body {
     bottom: 0;
     right: 0;
     height: 500px;
-    padding-bottom: 30px;
+}
+
+.about_us {
+    margin-top: 30px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.about_us_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about_us_text {
+    max-width: 395px;
+}
+
+.about_us_text_1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #D8D5F9
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #D8D5F9;
+    margin-top: 10px;
+}
+
+.about_us_cart {
+    max-width: 710px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10.5px);
+    border-radius: 30px;
+
 }
 
 .why_th {
     padding: 50px;
+    width: 100%;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10.5px);
@@ -204,94 +240,62 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.about_us_card_text {
+    margin: 40px 50px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    color: rgba(0, 0, 0, 0.7);
+}
 
 .wrap_2 {
     background: linear-gradient(180deg, #1F1F47 0%, #1F1F47 100%);
     width: 100%;
-    padding-bottom: 100px;
-    padding-top: 60px;
+
 }
 
 .couses_children {
-    margin-top: 60px;
-    font-weight: 400;
-    font-size: 24px;
+    margin: 30px;
+    font-size: 35px;
     line-height: 24px;
-    color: #D8D5F9;
+    color: rgb(15, 12, 156);
     text-align: center;
+}
+
+.create_course {
+    margin: 20px;
+    
+    text-align: right;
+    line-height: 18px;
+    
+    font-size: 30px;
+  }
+
+.create_course > a {
+    color: #ea0a0a;
+    text-decoration: none;
 }
 
 .courses {
-    margin-top: 0px;
-    display: flex;  
-    justify-content: center;
+    margin: 28px;
+    display: inline-block; 
 }
 
-.courses_1 {
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-}
 
 .couses_cart {
     text-align: center;
-    width: 300px;
+    width: 350px;
     transition: .5s;
-    height: 480px;
     padding: 30px;
     background: linear-gradient(209.21deg, rgb(15, 12, 156) 13.57%, rgb(2, 114, 194) 98.38%);
     border-radius: 20px;
     filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.7));
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
 }
 
-.couses_cart.cart_2 {
-    background: linear-gradient(209.21deg, rgb(76, 55, 109) 13.57%, rgb(31, 21, 53) 98.38%);
-}
-
-.couses_cart.cart_3 {
-    background: linear-gradient(209.21deg, rgb(233, 109, 44) 13.57%, rgb(239, 77, 77) 98.38%);
-}
-
-.couses_cart.cart_4 {
-    background: linear-gradient(209.21deg, rgb(253, 173, 0) 13.57%, rgb(233, 109, 44) 98.38%);
-}
-.couses_cart.cart_4.margin {
-    margin-left: 200px;
-}
-
-.couses_cart.cart_5 {
-    background: linear-gradient(209.21deg, rgb(101, 187, 118) 13.57%, rgb(70, 111, 171) 98.38%);
-}
-
-.couses_cart.cart_6 {
-    background: linear-gradient(209.21deg, rgb(136, 0, 148) 13.57%, rgb(81, 77, 255) 98.38%);
-}
-
-.couses_cart.cart_7 {
-    background: linear-gradient(209.21deg, rgb(120, 5, 115) 13.57%, rgb(246, 203, 196) 98.38%);
-}
-
-.couses_cart.cart_8 {
-    background: linear-gradient(209.21deg, rgb(0, 24, 69) 13.57%, rgb(54, 135, 216) 98.38%);
-}
-
-.couses_cart.cart_9 {
-    background: linear-gradient(209.21deg, rgb(225, 72, 133) 13.57%, rgb(241, 67, 102) 98.38%);
-}
-
-.couses_cart_2 {
-    transition: .5s;
-    width: 270px;
-    height: 460px;
-    padding: 10px;
-    background: linear-gradient(209.21deg, rgb(15, 12, 156) 13.57%, rgb(2, 114, 194) 98.38%);
-    border-radius: 20px;
-    filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.7));
-    display: flex;
-    flex-direction: column;
-}
 
 .couses_cart:hover {
     transform: scale(1.1);
@@ -304,13 +308,6 @@ body {
 .course_cart_image {
     display: block;
     width: 180px;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-.course_cart_image_2 {
-    display: block;
-    width: 160px;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -340,23 +337,26 @@ body {
     color: rgba(255, 255, 255, 0.9);
 }
 .course_card_descr_2 {
-     text-align: center;
+    text-align: center;
     color: #1F1F47;
-    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    
 }
+
 .price{
     padding: 5px;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10.5px);
     border-radius: 10px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     margin-top: auto;
+    
 }
+
 .team {
     margin-top: 100px;
 }
@@ -468,11 +468,11 @@ body {
     bottom: 42px;
 }
 
-/* .wrap_2 {
+.wrap_2 {
     padding-bottom: 100px;
-} */
+}
 
-.galery_wrap {
+.galery_wrap { 
     position: relative;
 }
 
@@ -637,11 +637,10 @@ body {
 .footer {
     margin-top: 80px;
     padding: 80px 0;
-    width: 100%;
     /* border-top:1px solid #777777ba; */
     position: relative;
-    /* background-image: url('../images/wave\ \(7\).svg'); */
-    /* background-size: cover; */
+    background-image: url('./images/wave\ \(7\).svg');
+    background-size: cover;
 
 }
 
@@ -673,9 +672,9 @@ body {
     margin-right: 48px;
 } */
 
-/* .wrap_2 {
-    padding-top: 60px;
-} */
+.wrap_2 {
+    padding-bottom: 0;
+}
 
 * {
     font-family: Montserrat;

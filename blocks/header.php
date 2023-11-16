@@ -5,8 +5,8 @@
   <div class="wrap">
       <div class="container">
         <header class="header">
-          <a href="index.php" class="logo">
-            <img src="images/LOGO.svg" alt="" />
+          <a href="Index.php" class="logo">
+            <img src="images/logo_2.png" alt="" />
           </a>
           <ul class="nav">
             <li class="nav_item3">
@@ -19,7 +19,7 @@
               <a href="course.php" class="nav_item_link">Курсы</a>
             </li>
             <li class="nav_item">
-              <a href="command.php" class="nav_item_link">Команда</a>
+              <a href="comand.php" class="nav_item_link">Команда</a>
             </li>
 
             <?php if (isset($_SESSION['clients']) || isset($_SESSION['employees'])) { ?>

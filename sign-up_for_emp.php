@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
+    <title>Sign up for employees</title>
     
     <link rel="stylesheet" href="css/style.css">
 
@@ -50,8 +50,8 @@
         </div>
     </div> 
     <div class="forma">
-        <form class="sign" action="vender/signup.php" method="post">
-            <h1 class="h3 mb-3 fw-normal">Зарегистрироваться</h1>
+        <form class="sign" action="vender/signup_for_emp.php" method="post">
+            <h1 class="h3 mb-3 fw-normal">Регистрация для сотрудников</h1>
             <label for="">ФИО</label>
             <input type="text" name="full_name" id="full_name" placeholder="Введите свое полное имя">
 
@@ -76,7 +76,6 @@
                     unset($_SESSION['message']);
                 }
             ?>
-            
         </form>
     </div>
 </body>

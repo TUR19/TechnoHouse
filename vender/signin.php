@@ -6,10 +6,12 @@
     if (empty($email) || empty($password)) {
         $_SESSION['message'] = "Пожалуйста, введите email и пароль";
         header('Location: ../sign-in.php');
-        exit();
+        exit(); 
     }
 
-    require 'connect.php';
+    require 'connect.php';  
+
+    $password = md5($password."jfgdhds2345");
 
     $statement = $connect->prepare("SELECT * FROM employees WHERE email = :email AND password = :password");
     $statement->bindParam(':email', $email);
@@ -17,7 +19,6 @@
     $statement->execute();
     $employees = $statement->fetch(PDO::FETCH_ASSOC);
 
-    
     if ($employees) {
         $_SESSION['employees'] = [
             "emp_id" => $employees['emp_id'], 
@@ -26,11 +27,10 @@
             "phone_number" => $employees['phone_number'],
             "date_birth" => $employees['date_birth']
         ];
+        $_SESSION['emp_id'] = $employees['emp_id'];
         header('Location: ../profile.php');
         exit();
     } 
-
-    $password = md5($password."jfgdhds2345");
     
     $statement = $connect->prepare("SELECT * FROM clients WHERE email = :email AND password = :password");
     $statement->bindParam(':email', $email);
@@ -40,11 +40,12 @@
 
     if ($clients) {
         $_SESSION['clients'] = [
-            "id" => $clients['id'], 
+            "client_id" => $clients['client_id'], 
             "full_name" => $clients['full_name'],
             "email" => $clients['email'],
             "phone_number" => $clients['phone_number']
         ];
+        $_SESSION['client_id'] = $clients['client_id'];
         header('Location: ../profile.php');
         exit();
     } 

@@ -1,17 +1,22 @@
 <?php
     session_start();
-    if (!isset($_SESSION['clients']) && !isset($_SESSION['employees'])) {
-        header('Location: index.php');
-        exit();
-    } else if (isset($_SESSION['clients'])) {
+    require 'vender/connect.php';
+    $results = [];
+    $course_id = $_GET['course_id']; 
+    $statement = $connect->prepare("SELECT * FROM courses JOIN groups_all ON courses.course_id = groups_all.course_id 
+    WHERE courses.course_id = :course_id");
+    $statement->bindParam(':course_id', $course_id);
+    $statement->execute();
+    $results = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+    if (isset($_SESSION['clients'])) {
         // Действия, связанные с клиентом
-        $user = $_SESSION['clients']; 
+        $user = $_SESSION['clients'];
     } else if (isset($_SESSION['employees'])) {
         // Действия, связанные со сотрудником
         $user = $_SESSION['employees'];
     }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,11 +25,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css">
-    
 </head> 
-<body> 
+<body>
+
     <div class="wrap">
         <div class="container">
             <header class="header">
@@ -56,23 +60,31 @@
                         <a href="sign-up.php" class="nav_item_link2">Регистрация</a>
                     </li>
                 <?php } ?>
-
             </ul>
             </header>
         </div>
     </div>
-        <div class="create_course">
-            <a href="profile/my_courses.php"><h3>Мои курсы</h3></a>
-        </div> 
-    <div class="forma">
-        <form class="prof" method="post">
-            <?php if (isset($_SESSION['clients']) || isset($_SESSION['employees'])) { ?>
-                <h1>ФИО: <?= $user['full_name']; ?></h1>
-                <h2>Номер телефона: <?= $user['phone_number']; ?></h2>
-                <h2>Электронная почта: <?= $user['email']; ?></h2>
-                <a href="vender/logout.php" class="logout"> <h3>Выход</h3></a>
-            <?php } ?>
-        </form>
-    </div>
+    <?php 
+        if (isset($_SESSION['message'])) {
+            echo '<p class="msg"> ' . $_SESSION['message'] . ' </p>';
+            unset($_SESSION['message']);
+        }
+    ?>
+
+    <?php if ($results): ?>
+        <p class="couses_children"><?= $results[0]['course_name']; ?></p>
+        <p>Цена: <?= $results[0]['price']; ?></p>
+
+        <?php foreach ($results as $result): ?>
+            <?php if ($result['group_type'] == 'individual'): ?>
+                <p>Тип группы: <?= $result['group_type']; ?> <a href="schedule.php?group_id=<?= $result['group_id'];?>">Посмотреть расписание</a></p>
+            <?php elseif ($result['group_type'] == 'group'): ?>
+                <p>Тип группы: <?= $result['group_type']; ?> <a href="schedule.php?group_id=<?= $result['group_id'];?>">Посмотреть расписание</a></p>
+            <?php endif; ?>
+        <?php endforeach; ?>
+
+    <?php endif; ?>
+
+
 </body>
 </html>
